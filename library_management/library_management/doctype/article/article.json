@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "Book.#####",
+ "autoname": "{article_name}.##",
  "creation": "2023-10-23 14:15:17.750818",
  "default_view": "List",
  "doctype": "DocType",
@@ -14,7 +15,9 @@
   "description",
   "isbn",
   "status",
-  "publisher"
+  "publisher",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -56,12 +59,25 @@
    "fieldname": "publisher",
    "fieldtype": "Data",
    "label": "publisher"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
   }
  ],
+ "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2023-10-25 11:25:09.526267",
+ "modified": "2023-10-26 14:31:21.116381",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -104,6 +120,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
