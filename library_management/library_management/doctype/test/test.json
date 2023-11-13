@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "{first_names}",
+ "creation": "2023-10-26 17:52:59.997674",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_tab",
+  "first_names",
+  "last_name",
+  "second_tab",
+  "item"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_tab",
+   "fieldtype": "Tab Break",
+   "label": "first"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last name"
+  },
+  {
+   "fieldname": "second_tab",
+   "fieldtype": "Tab Break",
+   "label": "second"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "item",
+   "options": "Country"
+  },
+  {
+   "fieldname": "first_names",
+   "fieldtype": "Data",
+   "label": "first name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-26 18:08:10.148552",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "test",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
